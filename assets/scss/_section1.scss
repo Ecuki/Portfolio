@@ -35,7 +35,7 @@
   z-index: 2;
 }
 .fog-img-first {
-  background-image: url("/img/fog-1.PNG");
+  background-image: url("../img/fog-1.PNG");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -44,7 +44,7 @@
   -webkit-filter: blur(2px);
 }
 .fog-img-second {
-  background-image: url("/img/fog-2.PNG");
+  background-image: url("../img/fog-2.PNG");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -60,7 +60,7 @@
   margin: auto;
   width: 10vw;
   height: 10vw;
-  background-image: url("/img/moon.PNG");
+  background-image: url("../img/moon.PNG");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

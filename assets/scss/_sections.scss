@@ -2,7 +2,7 @@ section {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("/img/lake1.JPG");
+  background-image: url("./img/lake/lake1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,14 +48,14 @@ section {
   }
 }
 .section__1 {
-  background-image: url("/img/lake/lake2.JPG");
+  background-image: url("../img/lake/lake2.jpg");
 }
 .section__2 {
-  background-image: url("/img/montains1.JPG");
+  background-image: url("../img/montains1.jpg");
 }
 .section__3 {
-  background-image: url("/img/lake/lake2.JPG");
+  background-image: url("../img/lake/lake2.jpg");
 }
 .section__4 {
-  background-image: url("/img/montains2.JPG");
+  background-image: url("../img/montains2.jpg");
 }
