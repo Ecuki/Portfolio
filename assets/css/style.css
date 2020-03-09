@@ -196,7 +196,7 @@ section {
   z-index: 2; }
 
 .fog-img-first {
-  background-image: url("../img/fog-1.PNG");
+  background-image: url("../img/fog-1.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -205,7 +205,7 @@ section {
   -webkit-filter: blur(2px); }
 
 .fog-img-second {
-  background-image: url("../img/fog-2.PNG");
+  background-image: url("../img/fog-2.png");
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -221,7 +221,7 @@ section {
   margin: auto;
   width: 10vw;
   height: 10vw;
-  background-image: url("../img/moon.PNG");
+  background-image: url("../img/moon.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
@@ -339,7 +339,7 @@ section {
   background-image: url("../img/montains2.jpg"); }
 
 .img3 {
-  background-image: url("../img/moon.PNG"); }
+  background-image: url("../img/moon.png"); }
 
 .flip-card {
   background-color: transparent;
