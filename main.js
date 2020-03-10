@@ -1,5 +1,29 @@
+const turnOn = element => {
+  element.style.display = "flex";
+  console.log(element);
+  (on = () => {
+    if ((element.style.opacity += 0.01) < 1) {
+      requestAnimationFrame(on);
+    } else {
+      element.style.opacity = 1;
+    }
+  })();
+};
+
+const fadeOut = element => {
+  // element.style.opacity = 1;
+
+  (fade = () => {
+    if ((element.style.opacity -= 0.02) > 0) {
+      requestAnimationFrame(fade);
+    } else {
+      element.style.display = "none";
+    }
+  })();
+};
 document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.querySelector("#wrapper");
+
   let counter = document.querySelector(".counter");
   const preloader = document.querySelector(".preloader");
   const preloaderMessage = document.querySelector(".preloader-message");
@@ -29,28 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 3000);
     }
   }, Math.floor(Math.random() * 35) + 10);
-
-  const turnOn = element => {
-    (on = () => {
-      if ((element.style.opacity += 0.01) < 1) {
-        requestAnimationFrame(on);
-      } else {
-        element.style.opacity = 1;
-      }
-    })();
-  };
-
-  const fadeOut = element => {
-    element.style.opacity = 1;
-
-    (fade = () => {
-      if ((element.style.opacity -= 0.02) < 0) {
-        element.style.display = "none";
-      } else {
-        requestAnimationFrame(fade);
-      }
-    })();
-  };
 });
 
 let timeStamp = 0;
@@ -93,12 +95,12 @@ function logScroll(e) {
       }
     }
   }
+
   document.addEventListener("resize", () => {
     const section = document.querySelector(`#${actualSection}`);
 
     wrapper.scroll({
       top: section.offsetTop,
-
       behavior: "smooth"
     });
   });

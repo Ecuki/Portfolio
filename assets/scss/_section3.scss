@@ -1,20 +1,17 @@
 .section__3 {
   &:hover {
-    // transform: scale(1);
   }
 }
 .mySlides {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 60%;
   position: relative;
   border: 2px solid #fff;
   box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
   box-sizing: border-box;
   overflow: hidden;
-  //   transform: translate(0);
-  //   animation: appear 1s both linear;
 }
 
 .cursor {
@@ -58,6 +55,9 @@
   position: absolute;
   top: 1%;
   color: #fff;
+  @media (max-width: 640px) {
+    padding: 0;
+  }
 }
 
 .caption-container {
@@ -66,8 +66,21 @@
 
   padding: 5px 16px;
   color: white;
+  @media (max-width: 640px) {
+    padding: 5px 0;
+  }
   & p {
     font-size: 1.3rem;
+    font-weight: 700;
+    margin: 10px 0;
+    @media (max-width: 640px) {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 5px 0;
+    }
+    @media (max-width: 640px) and (orientation: landscape) {
+      margin: 0;
+    }
   }
 }
 .row {
@@ -109,10 +122,14 @@
   object-fit: cover;
   width: 100%;
   user-select: none;
-  // box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
-  // box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
   animation: floating 10s 1s linear infinite;
   -webkit-backface-visibility: hidden;
+  @media (max-width: 640px) and (orientation: landscape) {
+    height: 45vh;
+  }
+}
+video.full {
+  animation: none;
 }
 .from-left {
   transform: translateX(100vh);

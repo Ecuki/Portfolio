@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TRAVEL</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+  <title>Emil Jeziorski</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon/site.webmanifest">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -28,24 +28,30 @@
 
 
   <div class="wrapper" id="wrapper">
+    <div id="myModal" class="modal">
+
+      <span class="close">&times;</span>
+      <h1 class="modal-title">Miau</h1>
+      <p class="modal-text">Miau</p>
+    </div>
 
     <nav class="nav">
       <ul class="nav__list">
         <!-- <li class="list__item"><a href="/" class="list__icon">Menu</a></li> -->
         <li class="list__item">
-          <a href="#section1" class="list__link">Hi</a>
+          <a href="#section1" class="list__link">Mgiełka</a>
         </li>
         <li class="list__item">
-          <a href="#section2" class="list__link">Go</a>
+          <a href="#section2" class="list__link">CrazyBalls</a>
         </li>
         <li class="list__item">
-          <a href="#section3" class="list__link">Travel</a>
+          <a href="#section3" class="list__link">OlaZuzia</a>
         </li>
         <li class="list__item">
-          <a href="#section4" class="list__link">Last</a>
+          <a href="#section4" class="list__link">RandomPerson</a>
         </li>
       </ul>
-      <div class="nav__icons"><img class="icon icon__map" src="./assets/img/icons/maps-lines.svg"> </img> <img
+      <div class="nav__icons"><img class="icon icon__template" src="./assets/img/icons/maps-lines.svg"> </img> <img
           class="icon icon__phone" src="./assets/img/icons/phone-line.svg"> </img> <img class="icon icon__cat"
           src="./assets/img/icons/cat-animal.svg"> </img> </div>
     </nav>
@@ -67,23 +73,21 @@
     <section name="section2" id="section2" class="section section__2">
 
       <div class="view">
-        <h1 class="view__title">Lorem ipsum</h1>
+        <h1 class="view__title">CrazyBalls</h1>
         <div class="view__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Exercitationem quam voluptatibus iusto repellat esse enim ad maiores
-          impedit dolores nisi voluptatem laboriosam officiis porro, aliquid
-          incidunt quibusdam ducimus fuga explicabo.
+          Gra CrazyBalls to szalone i kolorowe piłki zamknięte w canvasie. Celem rozgrywki jest zjadanie mniejszych
+          obiektów oraz unikanie tych większych. Jak powszechnie wiadomo, większy zjada mniejszego!
         </div>
 
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <div class="view__img img1"></div>
+              <div class="view__img img1" style="background-image: url('./assets/img/crazy_balls_save.jpg')"></div>
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Save</h1>
+              <p>Zapis wyniku w localstorage</p>
+
             </div>
           </div>
         </div>
@@ -91,12 +95,13 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <div class="view__img img2"></div>
+              <div class="view__img img2" style="background-image: url('./assets/img/crazy_balls_gravity.jpg')"></div>
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Gravity</h1>
+              <p>Symulacja efektu:</p>
+              <p>- karmienia</p>
+              <p>- grawitacji</p>
             </div>
           </div>
         </div>
@@ -104,12 +109,12 @@
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
-              <div class="view__img img3"></div>
+              <div class="view__img img3" style="background-image: url('./assets/img/crazy_balls_scores.jpg')"></div>
             </div>
             <div class="flip-card-back">
-              <h1>John Doe</h1>
-              <p>Architect & Engineer</p>
-              <p>We love that guy</p>
+              <h1>Best</h1>
+              <p>Tablica wyników</p>
+
             </div>
           </div>
         </div>
@@ -121,27 +126,31 @@
         <div class="numbertext"><span class="numbertext-actual">1</span> / 6</div>
         <div class="mySlides">
 
-          <img src="./assets/img/lake/lake1.jpg" class="full">
+          <img src="./assets/gif/ola_zuzia_1.gif" class="full">
+        </div>
+
+        <div class="mySlides">
+          <video controls class="full">
+            <source src="./assets/video/zuzia_ola.mp4" type="video/mp4">
+          </video>
+
         </div>
 
         <div class="mySlides">
 
-          <img src="./assets/img/lake/lake2.jpg" class="full">
+          <img src=" ./assets/gif/ola_zuzia_2.gif" class="full">
         </div>
 
         <div class="mySlides">
 
-          <img src="./assets/img/lake/lake3.jpg" class="full">
+          <img src="./assets/img/zuzia_ola.jpg" class="full">
         </div>
 
         <div class="mySlides">
+          <img src="./assets/gif/ola_zuzia_3.gif
+         " class="full">
 
-          <img src="./assets/img/lake/lake4.jpg" class="full">
-        </div>
-
-        <div class="mySlides">
-
-          <img src="./assets/img/moon.png" class="full">
+          <!-- <img src="./assets/video/zuzia_ola.mp4" class="full"> -->
         </div>
 
         <div class="mySlides">
@@ -157,23 +166,26 @@
 
         <div class="row">
           <div class="column">
-            <img class="demo cursor" src="./assets/img/lake/lake1.jpg" onclick="currentSlide(1)" alt="The Woods">
+            <img class="demo cursor" src="./assets/img/demo/1.jpg" onclick="currentSlide(1)"
+              alt="Kolorowa strona dla Oli i Zuzi">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./assets/img/lake/lake2.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+            <img class="demo cursor" src="./assets/img/demo/5.jpg
+            " onclick="currentSlide(2)" alt="Animacja powitalna">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./assets/img/lake/lake3.jpg" onclick="currentSlide(3)"
-              alt="Mountains and fjords">
+            <img class="demo cursor" src=" ./assets/img/demo/2.jpg" onclick="currentSlide(3)"
+              alt="Dynamicznie generowane powitanie i zdjęcia">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./assets/img/lake/lake4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+            <img class="demo cursor" src="./assets/img/demo/4.jpg" onclick="currentSlide(4)" alt="Interaktywne litery">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./assets/img/moon.png" onclick="currentSlide(5)" alt="Nature and sunrise">
+            <img class="demo cursor" src="./assets/img/demo/3.jpg
+           " onclick="currentSlide(5)" alt="Pisanko - czyli czat połączony z MongoDB Atlas">
           </div>
           <div class="column">
-            <img class="demo cursor" src="./assets/img/lake/lake2.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+            <img class="demo cursor" src="./assets/img/lake/lake2.jpg" onclick="currentSlide(6)" alt="____">
           </div>
         </div>
       </div>
@@ -190,24 +202,28 @@
         </div>
 
         <div class="ciclegraph">
-          <div class="circle" style="background-image: url('./assets/img/montains1.jpg'); display: none;"></div>
-          <div class="circle" style="background-image: url('./assets/img/montains2.jpg')"></div>
+          <div class="circle"
+            style="background-image: url('./assets/img/random_person/random_person_7.jpg'); display: none;"></div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_6.jpg')"></div>
           <div class="circle" style="background-image: url('./assets/img/moon.png')"></div>
-          <div class="circle" style="background-image: url('./assets/img/lake/lake1.jpg')"></div>
-          <div class="circle" style="background-image: url('./assets/img/lake/lake2.jpg')"></div>
-          <div class="circle" style="background-image: url('./assets/img/lake/lake3.jpg')"></div>
-          <div class="circle" style="background-image: url('./assets/img/lake/lake4.jpg')"></div>
-          <div class="circle" style="background-image: url('./assets/img/montains1.jpg')"></div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_5.jpg')">
+          </div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_1.jpg')"></div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_2.jpg')"></div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_3.jpg')"></div>
+          <div class="circle" style="background-image: url('./assets/img/random_person/random_person_4.jpg')"></div>
 
 
         </div>
       </div>
     </section>
+
   </div>
 
   <script src="./js/slider.js"></script>
   <script src="./js/carusel.js"></script>
   <script src="./main.js"></script>
+  <script src="./js/redirections.js"></script>
 </body>
 
 </html>

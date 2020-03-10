@@ -9,16 +9,29 @@
     bottom: 0%;
     margin: auto;
     color: #fff;
+    z-index: 4;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.15s;
+    &:hover {
+      transform: scale(1.02);
+    }
   }
   &__title {
     font-size: 8vh;
     -webkit-box-reflect: below 15vh -webkit-gradient(linear, right top, right
           bottom, from(transparent), color-stop(40%, transparent), to(rgba(255, 255, 255, 0.2)));
+    @media (max-width: 375px) {
+      font-size: 5vh;
+    }
   }
   &__subtitle {
     font-size: 4vh;
     -webkit-box-reflect: below 4vh -webkit-gradient(linear, right top, right
           bottom, from(transparent), to(rgba(255, 255, 255, 0.3)));
+    @media (max-width: 375px) {
+      font-size: 3vh;
+    }
   }
 }
 .fog-conteiner {

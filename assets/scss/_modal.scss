@@ -1,0 +1,62 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.883);
+  z-index: 999;
+  transform: scale(1);
+  animation: appear 1s ease-in-out both;
+
+  &-title,
+  &-text {
+    background-color: #fff;
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    height: 10vh;
+    background-color: rgb(192, 87, 17);
+    border-radius: 3px 3px 0 0;
+  }
+  &-text {
+    height: 30vh;
+    border-radius: 0 0 3px 3px;
+  }
+  & .close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 30px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+    color: #fff;
+    font-size: 34px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.15s;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

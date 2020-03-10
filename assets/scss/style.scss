@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 @import "./_loader.scss";
 @import "./_nav.scss";
+@import "./_modal.scss";
 @import "./_sections.scss";
 @import "./_section1.scss";
 @import "./_section2.scss";
@@ -31,5 +32,8 @@ $shadow-color: rgba(245, 248, 217, 0.822);
   }
   & {
     -ms-overflow-style: none;
+  }
+  @media (min-height: 736px) {
+    font-size: 18px;
   }
 }

@@ -16,13 +16,19 @@ $shadow-color: rgba(255, 255, 255, 0.4);
   z-index: 2;
   transition: 0.3s;
   overflow: hidden;
-
   transition: width 1s;
   &:hover {
     & .nav__list {
       width: 50%;
       opacity: 1;
     }
+  }
+  @media (max-width: 640px) {
+    height: 15%;
+  }
+  @media (max-width: 640px) and (orientation: landscape) {
+    top: 5px;
+    height: 12%;
   }
 }
 ul {
@@ -42,7 +48,14 @@ ul {
 
   height: 100%;
   transition: 1s;
+  @media (max-width: 640px) {
+    flex-wrap: wrap;
+  }
+  @media (max-width: 640px) and (orientation: landscape) {
+    flex-wrap: nowrap;
+  }
 }
+
 .nav__icons {
   width: 30%;
   display: flex;
@@ -54,6 +67,13 @@ ul {
   bottom: 0;
   margin: auto 0 auto auto;
   user-select: none;
+  cursor: pointer;
+  @media (max-width: 640px) {
+    width: 40%;
+  }
+  @media (max-width: 640px) and (orientation: landscape) {
+    width: 30%;
+  }
 }
 .icon {
   height: 5vh;
@@ -67,7 +87,10 @@ ul {
       brightness(107%) contrast(107%);
   }
   @media (max-width: 640px) {
-    height: 3vh;
+    height: 4vh;
+  }
+  @media (max-width: 640px) and (orientation: landscape) {
+    height: 20px;
   }
 }
 // i::before {
@@ -81,7 +104,7 @@ ul {
   // color: rgb(31, 5, 5);
   color: #fff;
   font-weight: 700;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
   transition: 0.15s;
   user-select: none;
   &:hover {
@@ -90,5 +113,12 @@ ul {
   @media (max-width: 640px) {
     height: 2.5vh;
     padding: 0 5px 0 5px;
+  }
+  @media (max-width: 640px) and (orientation: landscape) {
+    font-weight: 200;
+    height: 100%;
+    padding: 0 5px;
+    text-transform: none;
+    font-size: 0.9rem;
   }
 }

@@ -23,8 +23,7 @@
   }
   .section__2 & {
     @media (max-width: 640px) {
-      // flex-direction: row;
-      align-items: flex-start;
+      justify-content: space-evenly;
     }
   }
 }
@@ -42,9 +41,8 @@
   width: 40%;
   .section__2 & {
     @media (max-width: 640px) {
-      height: 20%;
-      font-size: 5vh;
-      padding: 0 5px 0 5px;
+      padding-top: 3%;
+      font-size: 1.7rem;
     }
   }
 }
@@ -52,7 +50,6 @@
   padding: 20px 0;
   width: 40%;
   @media (max-width: 640px) {
-    padding: 10px 0;
     height: 80%;
   }
 }
@@ -68,21 +65,17 @@
   box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
   -webkit-backface-visibility: hidden;
 }
-.img1 {
-  background-image: url("../img/montains1.jpg");
-}
-.img2 {
-  background-image: url("../img/montains2.jpg");
-}
-.img3 {
-  background-image: url("../img/moon.png");
-}
+
 .flip-card {
   background-color: transparent;
-  width: 20%;
+  width: 18%;
   height: 100%;
   perspective: 1000px;
-
+  @media (max-width: 640px) {
+    // flex-direction: row;
+    height: 30%;
+    width: 50%;
+  }
   &-inner {
     position: relative;
     width: 100%;
@@ -120,7 +113,10 @@
     align-items: center;
     flex-direction: column;
     background-color: transparent;
-    color: white;
+    color: rgb(255, 255, 255);
     transform: rotateY(180deg);
+    & p {
+      font-weight: 700;
+    }
   }
 }
