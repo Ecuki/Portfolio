@@ -4,12 +4,23 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:scss": "node-sass assets/scss --output=assets/css/"
+    "build:sass": "node-sass --output-style=expanded --source-map=true assets/scss/style.scss assets/css/style.css",
+    "prefix": "npm run build:sass && postcss assets/css/style.css --use=autoprefixer --output=assets/css/style.css",
+    "start": "onchange \"assets/scss/**/*.scss\" -- npm run prefix"
   },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^4.13.1"
-  }
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "node-sass": "^4.13.1",
+    "onchange": "^6.1.0",
+    "postcss-cli": "^7.1.0"
+  },
+  "keywords": [
+    "SASS"
+  ]
 }
