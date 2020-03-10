@@ -1,6 +1,7 @@
 const urlTitles = `https://www.youtube.com/watch?v=ShV54CpAeEI`;
 const urlTemplate = `https://ecuki.github.io/Travel_template/`;
 const herokuOlaZuzia = `https://ola-zuzia.herokuapp.com/`;
+const urlCrazyBalls = `https://ecuki.github.io/CrazyBalls/`;
 const titles = document.querySelector(".section__titles");
 const template = document.querySelector(".icon__template");
 const phone = document.querySelector(".icon__phone");
@@ -8,6 +9,7 @@ const cat = document.querySelector(".icon__cat");
 const modal = document.getElementById("myModal");
 const exit = document.querySelector(".close");
 const caption = document.getElementById("caption");
+const crazyBalls = document.getElementById("CrazyBalls");
 
 function openInNewTab(url) {
   var win = window.open(url, "_blank");
@@ -20,6 +22,10 @@ titles.addEventListener("click", () => {
 
 caption.addEventListener("click", () => {
   openInNewTab(herokuOlaZuzia);
+});
+
+crazyBalls.addEventListener("click", () => {
+  openInNewTab(urlCrazyBalls);
 });
 
 template.addEventListener("click", () => {
