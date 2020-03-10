@@ -28,16 +28,22 @@
 
 
   <div class="wrapper" id="wrapper">
-    <div id="myModal" class="modal">
 
-      <span class="close">&times;</span>
+    <div id="catModal" class="modal">
+      <span class="close" name="catModal">&times;</span>
       <h1 class="modal-title">Miau</h1>
       <p class="modal-text">Miau</p>
     </div>
 
+    <div id="phoneModal" class="modal phone__modal">
+      <span class="close" name="phoneModal">&times;</span>
+      <h1 class="modal-title">Kontakt</h1>
+      <div class="modal-img" style="background-image: url('./assets/img/budowa.jpg')">Projekt w trakcie realizacji</div>
+      <p class="modal-text">jeziorski.emil@gmail.com</p>
+    </div>
+
     <nav class="nav">
       <ul class="nav__list">
-        <!-- <li class="list__item"><a href="/" class="list__icon">Menu</a></li> -->
         <li class="list__item">
           <a href="#section1" class="list__link">Mgiełka</a>
         </li>
@@ -51,11 +57,14 @@
           <a href="#section4" class="list__link">RandomPerson</a>
         </li>
       </ul>
+
       <div class="nav__icons"><img class="icon icon__template" src="./assets/img/icons/maps-lines.svg"> </img> <img
           class="icon icon__phone" src="./assets/img/icons/phone-line.svg"> </img> <img class="icon icon__cat"
           src="./assets/img/icons/cat-animal.svg"> </img> </div>
     </nav>
+
     <section id="section1" name="section1" class="section section__1">
+
       <div class="moon"></div>
       <div class="moon-in-water"></div>
       <div class="fog-conteiner">
@@ -70,6 +79,7 @@
       </div>
 
     </section>
+
     <section name="section2" id="section2" class="section section__2">
 
       <div class="view">
@@ -87,7 +97,6 @@
             <div class="flip-card-back">
               <h1>Save</h1>
               <p>Zapis wyniku w localstorage</p>
-
             </div>
           </div>
         </div>
@@ -114,18 +123,18 @@
             <div class="flip-card-back">
               <h1>Best</h1>
               <p>Tablica wyników</p>
-
             </div>
           </div>
         </div>
 
       </div>
     </section>
+
     <section id="section3" name="section3" class="section section__3">
+
       <div class="view">
         <div class="numbertext"><span class="numbertext-actual">1</span> / 6</div>
         <div class="mySlides">
-
           <img src="./assets/gif/ola_zuzia_1.gif" class="full">
         </div>
 
@@ -133,24 +142,19 @@
           <video controls class="full">
             <source src="./assets/video/zuzia_ola.mp4" type="video/mp4">
           </video>
-
         </div>
 
         <div class="mySlides">
-
           <img src=" ./assets/gif/ola_zuzia_2.gif" class="full">
         </div>
 
         <div class="mySlides">
-
           <img src="./assets/img/zuzia_ola.jpg" class="full">
         </div>
 
         <div class="mySlides">
           <img src="./assets/gif/ola_zuzia_3.gif
          " class="full">
-
-          <!-- <img src="./assets/video/zuzia_ola.mp4" class="full"> -->
         </div>
 
         <div class="mySlides">
@@ -164,7 +168,6 @@
           <img src="./assets/img/icons/arrow-right.svg" class="caption__arrow"></img>
           <p id="caption">
           </p>
-
         </div>
 
         <div class="row">
@@ -191,9 +194,12 @@
             <img class="demo cursor" src="./assets/img/lake/lake2.jpg" onclick="currentSlide(6)" alt="____">
           </div>
         </div>
+
       </div>
     </section>
+
     <section id="section4" name="section4" class="section section__4">
+
       <div class="view">
         <h1 class="view__title">Lorem ipsum</h1>
         <div id="carusel-img" class="view__img"></div>
@@ -215,10 +221,9 @@
           <div class="circle" style="background-image: url('./assets/img/random_person/random_person_2.jpg')"></div>
           <div class="circle" style="background-image: url('./assets/img/random_person/random_person_3.jpg')"></div>
           <div class="circle" style="background-image: url('./assets/img/random_person/random_person_4.jpg')"></div>
-
-
         </div>
       </div>
+
     </section>
 
   </div>

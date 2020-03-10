@@ -1,42 +1,43 @@
-const urlTitles = `https://www.youtube.com/watch?v=ShV54CpAeEI`;
-const urlTemplate = `https://ecuki.github.io/Travel_template/`;
-const herokuOlaZuzia = `https://ola-zuzia.herokuapp.com/`;
-const urlCrazyBalls = `https://ecuki.github.io/CrazyBalls/`;
-const titles = document.querySelector(".section__titles");
-const template = document.querySelector(".icon__template");
-const phone = document.querySelector(".icon__phone");
-const cat = document.querySelector(".icon__cat");
-const modal = document.getElementById("myModal");
-const exit = document.querySelector(".close");
-const caption = document.getElementById("caption");
-const crazyBalls = document.getElementById("CrazyBalls");
+const urls = {
+  titles: `https://www.youtube.com/watch?v=ShV54CpAeEI`,
+  template: `https://ecuki.github.io/Travel_template/`,
+  olaZuzia: `https://ola-zuzia.herokuapp.com/`,
+  crazyBalls: `https://ecuki.github.io/CrazyBalls/`
+};
+const activeElements = {
+  titles: document.querySelector(".section__titles"),
+  template: document.querySelector(".icon__template"),
+  olaZuzia: document.getElementById("caption"),
+  crazyBalls: document.getElementById("CrazyBalls")
+};
+const navIcons = ["cat", "phone"];
+const closes = document.querySelectorAll(".close");
+
+document.addEventListener("DOMContentLoaded", () => {
+  for (let url in urls) {
+    activeElements[url].addEventListener("click", () => {
+      openInNewTab(urls[url]);
+    });
+  }
+});
 
 function openInNewTab(url) {
   var win = window.open(url, "_blank");
   win.focus();
 }
 
-titles.addEventListener("click", () => {
-  openInNewTab(urlTitles);
+navIcons.map(icon => {
+  const element = document.querySelector(`.icon__${icon}`);
+  const modal = document.getElementById(`${icon}Modal`);
+  element.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
 });
 
-caption.addEventListener("click", () => {
-  openInNewTab(herokuOlaZuzia);
-});
-
-crazyBalls.addEventListener("click", () => {
-  openInNewTab(urlCrazyBalls);
-});
-
-template.addEventListener("click", () => {
-  openInNewTab(urlTemplate);
-});
-
-cat.addEventListener("click", () => {
-  // turnOn(modal);
-  modal.style.display = "flex";
-});
-
-exit.addEventListener("click", () => {
-  fadeOut(modal);
+closes.forEach(close => {
+  close.addEventListener("click", e => {
+    const modalName = e.target.attributes.name.value;
+    const modal = document.getElementById(modalName);
+    fadeOut(modal);
+  });
 });

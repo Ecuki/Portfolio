@@ -1,6 +1,5 @@
 const turnOn = element => {
   element.style.display = "flex";
-  console.log(element);
   (on = () => {
     if ((element.style.opacity += 0.01) < 1) {
       requestAnimationFrame(on);

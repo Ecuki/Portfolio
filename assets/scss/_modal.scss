@@ -52,6 +52,27 @@
     }
   }
 }
+.phone__modal {
+  & .modal-img {
+    position: relative;
+    width: 90%;
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    color: #fff;
+
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+  & .modal-text {
+    height: 10%;
+    text-transform: uppercase;
+  }
+}
+
 @keyframes appear {
   0% {
     transform: scale(0);
