@@ -1,5 +1,5 @@
 const urlTitles = `https://www.youtube.com/watch?v=ShV54CpAeEI`;
-const urlTemplate = `https://ecuki.github.io/Portfolio/`;
+const urlTemplate = `https://ecuki.github.io/Travel_template/`;
 const titles = document.querySelector(".section__titles");
 const template = document.querySelector(".icon__template");
 const phone = document.querySelector(".icon__phone");
