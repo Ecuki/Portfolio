@@ -2,13 +2,15 @@ const urls = {
   titles: `https://www.youtube.com/watch?v=ShV54CpAeEI`,
   template: `https://ecuki.github.io/Travel_template/`,
   olaZuzia: `https://ola-zuzia.herokuapp.com/`,
-  crazyBalls: `https://ecuki.github.io/CrazyBalls/`
+  crazyBalls: `https://ecuki.github.io/CrazyBalls/`,
+  randomPerson: `https://ecuki.github.io/RandomPeople/`
 };
 const activeElements = {
   titles: document.querySelector(".section__titles"),
   template: document.querySelector(".icon__template"),
   olaZuzia: document.getElementById("caption"),
-  crazyBalls: document.getElementById("CrazyBalls")
+  crazyBalls: document.getElementById("CrazyBalls"),
+  randomPerson: document.getElementById("RandomPerson")
 };
 const navIcons = ["cat", "phone"];
 const closes = document.querySelectorAll(".close");
