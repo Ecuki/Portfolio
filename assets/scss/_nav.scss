@@ -86,6 +86,15 @@ ul {
     filter: invert(0%) sepia(93%) saturate(0%) hue-rotate(235deg)
       brightness(107%) contrast(107%);
   }
+  &__github {
+    position: fixed;
+
+    right: 10px;
+    bottom: 10px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+  }
   @media (max-width: 640px) {
     height: 4vh;
   }

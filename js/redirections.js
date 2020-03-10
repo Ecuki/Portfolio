@@ -3,14 +3,16 @@ const urls = {
   template: `https://ecuki.github.io/Travel_template/`,
   olaZuzia: `https://ola-zuzia.herokuapp.com/`,
   crazyBalls: `https://ecuki.github.io/CrazyBalls/`,
-  randomPerson: `https://ecuki.github.io/RandomPeople/`
+  randomPerson: `https://ecuki.github.io/RandomPeople/`,
+  gitHub: `https://github.com/Ecuki/`
 };
 const activeElements = {
   titles: document.querySelector(".section__titles"),
   template: document.querySelector(".icon__template"),
   olaZuzia: document.getElementById("caption"),
   crazyBalls: document.getElementById("CrazyBalls"),
-  randomPerson: document.getElementById("RandomPerson")
+  randomPerson: document.getElementById("RandomPerson"),
+  gitHub: document.getElementById("GitHub")
 };
 const navIcons = ["cat", "phone"];
 const closes = document.querySelectorAll(".close");
