@@ -62,7 +62,7 @@ function logScroll(e) {
     // let sectionID = "";
     console.log(e);
     for (let section of sections) {
-      if (section.offsetTop === wrapper.scrollTop) {
+      if (Math.abs(section.offsetTop - wrapper.scrollTop) < 2) {
         actualSection = section.id;
       }
     }
