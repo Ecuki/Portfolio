@@ -10,8 +10,6 @@ const turnOn = element => {
 };
 
 const fadeOut = element => {
-  // element.style.opacity = 1;
-
   (fade = () => {
     if ((element.style.opacity -= 0.02) > 0) {
       requestAnimationFrame(fade);
@@ -59,8 +57,6 @@ let timeStamp = 0;
 function logScroll(e) {
   if (e.timeStamp > timeStamp + 1000) {
     const sections = document.querySelectorAll(".section");
-    // let sectionID = "";
-    console.log(e);
     for (let section of sections) {
       if (Math.abs(section.offsetTop - wrapper.scrollTop) < 2) {
         actualSection = section.id;

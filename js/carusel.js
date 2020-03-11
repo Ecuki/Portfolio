@@ -24,7 +24,6 @@ document.querySelectorAll(".ciclegraph").forEach(ciclegraph => {
     const image = document.getElementById("carusel-img");
     const carusel = document.getElementById("180");
     image.style.backgroundImage = carusel.style.backgroundImage;
-    // console.log(e.target.style.backgroundImage);
   };
 
   let circles = ciclegraph.querySelectorAll(".circle");
@@ -48,11 +47,6 @@ document.querySelectorAll(".ciclegraph").forEach(ciclegraph => {
     }
 
     for (let circle of circles) {
-      // circle.style.display =
-      //   ((circle.id * 1 === 0 + dangle || circle.id * 1 === 0) && id < 180) ||
-      //   (parseInt(circle.id * 1) === 360 - dangle && id > 180)
-      //     ? "none"
-      //     : setShowTimeout(circle);
       setCircle(circle);
     }
   };
