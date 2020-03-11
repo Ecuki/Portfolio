@@ -21,7 +21,6 @@ const fadeOut = element => {
   })();
 };
 document.addEventListener("DOMContentLoaded", () => {
-
   const wrapper = document.querySelector("#wrapper");
   const nav = document.querySelector(".nav");
   let counter = document.querySelector(".counter");
@@ -48,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         fadeOut(preloaderMessage);
         wrapper.style.visibility = "visible";
         nav.style.visibility = "visible";
-        wrapper.addEventListener("wheel", e => {
-          logScroll(e);
-        });
       }, 3000);
+      wrapper.addEventListener("wheel", e => {
+        logScroll(e);
+      });
     }
   }, Math.floor(Math.random() * 35) + 10);
 });
@@ -61,7 +60,7 @@ function logScroll(e) {
   if (e.timeStamp > timeStamp + 1000) {
     const sections = document.querySelectorAll(".section");
     // let sectionID = "";
-
+    console.log(e);
     for (let section of sections) {
       if (section.offsetTop === wrapper.scrollTop) {
         actualSection = section.id;
