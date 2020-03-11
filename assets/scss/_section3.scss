@@ -78,6 +78,9 @@
     margin: 10px 0;
     cursor: pointer;
     text-decoration: underline;
+    &:hover {
+      transform: scale(1.05);
+    }
     @media (max-width: 640px) {
       font-size: 1.1rem;
       font-weight: 500;

@@ -21,8 +21,9 @@ const fadeOut = element => {
   })();
 };
 document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.querySelector("#wrapper");
 
+  const wrapper = document.querySelector("#wrapper");
+  const nav = document.querySelector(".nav");
   let counter = document.querySelector(".counter");
   const preloader = document.querySelector(".preloader");
   const preloaderMessage = document.querySelector(".preloader-message");
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         fadeOut(preloaderMessage);
         wrapper.style.visibility = "visible";
+        nav.style.visibility = "visible";
         wrapper.addEventListener("wheel", e => {
           logScroll(e);
         });

@@ -10,6 +10,7 @@
   bottom: 0;
   right: 0;
   margin: auto;
+  padding-left: 5px;
   justify-content: center;
   align-items: center;
   transform: scaleX(1);
@@ -35,11 +36,16 @@
   align-items: center;
   color: #fff;
 }
+
 .view__title {
-  padding-top: 5%;
+  // padding-top: 5%;
   font-size: 3rem;
   width: 40%;
   cursor: pointer;
+  transition: 0.15s;
+  &:hover {
+    transform: scale(1.05);
+  }
   .section__2 & {
     @media (max-width: 640px) {
       padding-top: 3%;
